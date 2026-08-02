@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#222;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0d6efd;
+    color:#fff;
+    position:sticky;
+    top:0;
+}
+
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
+    url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.call,
+.whatsapp{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.call{
+    background:#ffffff;
+    color:#0d6efd;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}.services{
+    padding:60px 8%;
+    background:#ffffff;
+}
+
+.services h2{
+    text-align:center;
+    font-size:36px;
+    color:#0d6efd;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:50px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#222;
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
