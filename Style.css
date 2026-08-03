@@ -270,3 +270,6 @@ footer p{
 body{
     background:red;
 }
+body{
+    border:10px solid red;
+}
