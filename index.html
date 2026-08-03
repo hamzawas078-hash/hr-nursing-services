@@ -1,248 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H.R Nursing Services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            background-color: #ffffff;
-            color: #333;
-        }
+<title>H.R Nursing Services</title>
 
-        /* Top Header */
-        header {
-            background-color: #0d6efd;
-            color: white;
-            padding: 12px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<link rel="stylesheet" href="style.css">
 
-        header h1 {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 12px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 0.8rem;
-        }
-
-        /* Main Section (Image, Buttons, Services side by side) */
-        .main-section {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 40px;
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .hero-img {
-            width: 220px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 5px;
-            margin-top: 60px;
-        }
-
-        .btn-action {
-            background-color: #0d6efd;
-            color: white;
-            text-decoration: none;
-            padding: 10px 12px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-            width: 75px;
-            line-height: 1.1;
-        }
-
-        /* Services Vertical Grid */
-        .services-container {
-            text-align: center;
-        }
-
-        .services-container h2 {
-            color: #0d6efd;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-
-        .services-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .service-box {
-            width: 90px;
-            height: 60px;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
-        }
-
-        /* Booking Form Section */
-        .booking-section {
-            background-color: #f8f9fa;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .booking-section h3 {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            color: #222;
-        }
-
-        .booking-form {
-            max-width: 450px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .booking-form input, 
-        .booking-form select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            outline: none;
-            background: #fff;
-        }
-
-        .btn-submit {
-            background-color: #0d6efd;
-            color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            cursor: pointer;
-            margin-top: 5px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0d6efd;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.75rem;
-            line-height: 1.5;
-        }
-    </style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>H.R Nursing Services</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
 
-    <!-- Content Area -->
-    <div class="main-section">
-        <!-- Banner Image -->
-        <img src="banner.jpg" alt="Nursing Care" class="hero-img">
+<div class="logo">
+<h2>H.R Nursing Services</h2>
+</div>
 
-        <!-- Buttons -->
-        <div class="hero-buttons">
-            <a href="https://wa.me/923162738844" class="btn-action">
-                <i class="fa-regular fa-comment-dots"></i>
-                <span>WhatsApp Now</span>
-            </a>
-            <a href="tel:03162738844" class="btn-action">
-                <i class="fa-solid fa-phone"></i>
-                <span>Call Now</span>
-            </a>
-        </div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
 
-        <!-- Right Side Services -->
-        <div class="services-container">
-            <h2>Our Services</h2>
-            <div class="services-list">
-                <div class="service-box">💉</div>
-                <div class="service-box">💧</div>
-                <div class="service-box">💊</div>
-                <div class="service-box">❤️</div>
-                <div class="service-box">🏥</div>
-            </div>
-        </div>
-    </div>
+</header>
 
-    <!-- Booking Form -->
-    <div class="booking-section">
-        <h3>Book Nursing Service</h3>
-        <form class="booking-form">
-            <input type="text" placeholder="Full Name">
-            <input type="tel" placeholder="Phone Number">
-            <input type="text" placeholder="Address">
-            <select>
-                <option>Injection Service</option>
-                <option>Drip Service</option>
-                <option>Dressing Service</option>
-            </select>
-            <select>
-                <option value=""></option>
-            </select>
-            <button type="submit" class="btn-submit">Book Now</button>
-        </form>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p><strong>H.R Nursing Services</strong></p>
-        <p>📞 03162738844</p>
-        <p>📍 North Karachi, Karachi</p>
-        <p>Available 24/7</p>
-        <p style="margin-top: 5px; opacity: 0.8;">© 2026 H.R Nursing Services. All Rights Reserved.</p>
-    </footer>
+<section class="hero">
+
+<div>
+
+<h1>Professional Home Nursing Care</h1>
+
+<p>
+Trusted healthcare services at your doorstep in Karachi with experienced nursing staff.
+</p>
+
+<a href="tel:03162738844" class="call">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/923162738844" class="whatsapp">
+💬 WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💉 Injection Service</h3>
+<p>
+Safe and professional injection service by trained nursing staff.
+</p>
+</div>
+
+
+<div class="card">
+<h3>💧 IV Drip</h3>
+<p>
+Reliable IV drip service with proper care and monitoring.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🩹 Wound Dressing</h3>
+<p>
+Clean and careful wound dressing services at home.
+</p>
+</div>
+
+
+<div class="card">
+<h3>❤️ Patient Care</h3>
+<p>
+Experienced patient care and healthcare support at home.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>Why Choose H.R Nursing Services</h2>
+
+<p>
+We provide reliable, affordable and compassionate healthcare services with trained staff available for patient needs.
+</p>
+
+</section>
+
+
+<footer>
+
+<h3>H.R Nursing Services</h3>
+
+<p>📞 03162738844</p>
+
+<p>📍 North Karachi, Karachi</p>
+
+<p>Available 24/7</p>
+
+<p>© 2026 H.R Nursing Services. All Rights Reserved.</p>
+
+</footer>
+
 
 </body>
 </html>
