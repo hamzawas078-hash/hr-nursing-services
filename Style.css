@@ -141,3 +141,24 @@ font-size:18px;
 }
 
 }
+.about{
+    padding:60px 8%;
+    background:#ffffff;
+}
+
+.about h1,
+.about h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.about p{
+    max-width:900px;
+    margin:0 auto 20px;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+    color:#555;
+}
