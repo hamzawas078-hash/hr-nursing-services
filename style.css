@@ -16,23 +16,24 @@ header{
     align-items:center;
     padding:20px 8%;
     background:#0d6efd;
-    color:#fff;
+    color:white;
     position:sticky;
     top:0;
+    z-index:10;
 }
 
 .logo h2{
     font-size:28px;
-    font-weight:700;
 }
 
 nav a{
-    
-    color:#fff;
+    color:white;
     text-decoration:none;
     margin-left:20px;
     font-weight:500;
 }
+
+/* Home Hero */
 
 .hero{
     min-height:70vh;
@@ -41,7 +42,8 @@ nav a{
     justify-content:center;
     text-align:center;
     padding:40px;
-    background:linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
+    background:
+    linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
     url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80');
     background-size:cover;
     background-position:center;
@@ -49,43 +51,48 @@ nav a{
 }
 
 .hero h1{
-    font-size:48px;
-    margin-bottom:20px;
+    font-size:45px;
+    margin-bottom:15px;
 }
 
 .hero p{
     font-size:20px;
-    margin-bottom:30px;
 }
 
 .call,
 .whatsapp{
     display:inline-block;
-    padding:14px 28px;
-    margin:10px;
+    padding:12px 25px;
+    margin:15px 5px;
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
 }
 
 .call{
-    background:#ffffff;
+    background:white;
     color:#0d6efd;
 }
 
 .whatsapp{
     background:#25D366;
     color:white;
-}.services{
-    padding:60px 8%;
-    background:#ffffff;
 }
 
-.services h2{
+
+/* Services */
+
+.services{
+    padding:50px 8%;
+    background:white;
+}
+
+.services h2,
+.about h2{
     text-align:center;
-    font-size:36px;
     color:#0d6efd;
-    margin-bottom:40px;
+    font-size:32px;
+    margin-bottom:30px;
 }
 
 .cards{
@@ -95,91 +102,64 @@ nav a{
 }
 
 .card{
-    background:#fff;
-    padding:30px;
+    background:white;
+    padding:25px;
     border-radius:15px;
     text-align:center;
     box-shadow:0 5px 20px rgba(0,0,0,.10);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card i{
-    font-size:50px;
-    color:#0d6efd;
-    margin-bottom:15px;
 }
 
 .card h3{
-    color:#222;
-    font-size:22px;
+    color:#0d6efd;
+    margin-bottom:10px;
 }
+
+
+/* About */
+
+.about{
+    padding:50px 8%;
+    background:white;
+}
+
+.about p{
+    max-width:800px;
+    margin:15px auto;
+    text-align:center;
+    line-height:1.7;
+    color:#555;
+}
+
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+
+/* Mobile */
 
 @media(max-width:768px){
 
 header{
-flex-direction:column;
+    flex-direction:column;
 }
 
 nav{
-margin-top:15px;
+    margin-top:15px;
 }
 
 nav a{
-display:inline-block;
-margin:8px;
+    margin:8px;
+    display:inline-block;
 }
 
 .hero h1{
-font-size:34px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-.about{
-    padding:60px 8%;
-    background:#ffffff;
-}
-
-.about h1,
-.about h2{
-    text-align:center;
-    color:#0d6efd;
-    margin-bottom:20px;
-    font-size:36px;
-}
-
-.about p{
-    max-width:900px;
-    margin:0 auto 20px;
-    text-align:center;
-    line-height:1.8;
-    font-size:18px;
-    color:#555;
-}
-.about{
-    padding:60px 8%;
-    background:white;
-}
-
-.about h2{
-    text-align:center;
-    color:#0d6efd;
     font-size:32px;
-    margin:25px 0 15px;
 }
 
-.about p{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
-    font-size:18px;
-    color:#555;
-}
+    }
