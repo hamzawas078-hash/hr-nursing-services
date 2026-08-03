@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hamzawas078-hash.github.io/hr-nursing-services/sitemap.xml
