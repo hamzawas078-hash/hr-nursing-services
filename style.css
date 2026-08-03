@@ -179,3 +179,23 @@ nav a{
 header{
     padding:15px 8%;
 }
+.hero{
+    min-height:75vh;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:15px auto;
+}
+
+.call,
+.whatsapp{
+    font-size:18px;
+    padding:15px 30px;
+}
