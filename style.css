@@ -36,7 +36,7 @@ nav a{
 /* Home Hero */
 
 .hero{
-    min-height:48vh;
+    min-height:20vh;
     display:flex;
     align-items:center;
     justify-content:center;
