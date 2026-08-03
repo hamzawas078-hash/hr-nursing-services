@@ -1,197 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>H.R Nursing Services</title>
-<link rel="stylesheet" href="style.css">
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f7f7f7;
-    color:#222;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.R Nursing Services</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-header{
-    background:#0b74de;
-    color:white;
-    padding:25px;
-    text-align:center;
-}
+        body {
+            background-color: #ffffff;
+            color: #222222;
+            text-align: center;
+        }
 
-nav a{
-    color:white;
-    margin:8px;
-    text-decoration:none;
-}
+        /* Header / Navbar */
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 30px 15px 20px 15px;
+        }
 
-.hero{
-    padding:30px 20px;
-    text-align:center;
-    background:white;
-}
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
 
-.hero h1{
-    font-size:35px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-button{
-    background:#0b74de;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:8px;
-    font-size:16px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
 
-.services{
-    padding:20px;
-}
+        /* Hero Section */
+        .hero {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-.card{
-    background:white;
-    padding:20px;
-    margin:15px 0;
-    border-radius:12px;
-    box-shadow:0 2px 8px #ccc;
-    font-size:20px;
-}
+        .hero h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
 
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-</style>
-<meta name="description" content="HR Nursing Services provides Home Nursing, Patient Care, Elder Care and Medical Attendant Services in Karachi. Available 24/7.">
+        .hero-img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
 
-<meta name="keywords" content="Home Nursing Karachi, Patient Care Karachi, Elder Care Karachi, Nursing Services Karachi">
+        .hero p {
+            font-size: 1.15rem;
+            color: #333333;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
 
-<meta name="robots" content="index, follow">
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V5N5KHXXBK"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+        /* Button */
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #0d6efd;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
 
-gtag('config', 'G-V5N5KHXXBK');
-</script>
+        .btn-whatsapp:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>H.R Nursing Services</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="careers.html">Careers</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+    <!-- Header Section -->
+    <header>
+        <h1>H.R Nursing Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main class="hero">
+        <h2>Professional<br>Nursing Care At<br>Your Doorstep</h2>
 
-<section id="home" class="hero">
+        <!-- Image -->
+        <img src="banner.jpg" alt="H.R Nursing Services Banner" class="hero-img">
 
-<h1>Professional Nursing Care At Your Doorstep</h1>
-<img src="logo.png"
-alt="Nurse"
-style="width:220px; border-radius:15px; margin:20px auto; display:block;">
-<p>
-Professional Nursing Services available in North Karachi,
-New Karachi & Surjani Town.
-</p>
+        <p>Professional Nursing Services available in North Karachi, New Karachi & Surjani Town.</p>
 
-<a href="https://wa.me/923162738844" target="_blank">
-    <button>💬 WhatsApp Now</button>
-</a>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/923162738844" class="btn-whatsapp" target="_blank">
+            <i class="fa-regular fa-comment-dots"></i> WhatsApp Now
+        </a>
+    </main>
 
-<br><br>
-
-<a href="tel:+923162738844">
-    <button>📞 Call Now</button>
-</a>
-
-<section id="about"
-
-
-<section id="services" class="services">
-
-<h2>Our Services</h2>
-
-<div class="card">💉 Injection Service</div>
-
-<div class="card">💧 IV Drip</div>
-
-<div class="card">🩹 Wound Dressing</div>
-
-<div class="card">❤️ Blood Pressure Check</div>
-
-<div class="card">🏥 Patient Care</div>
-
-</section>
-<!-- About Section -->
-style="padding:50px 20px; background:#ffffff; text-align:center;">
-    <h2 style="font-size:40px; margin-bottom:20px;">About Us</h2>
-
-    <p style="max-width:800px; margin:auto; font-size:18px; line-height:1.8; color:#555;">
-        H.R Nursing Services provides professional home nursing care in
-        North Karachi, New Karachi and Surjani Town.
-        Our experienced staff offers safe, reliable and affordable healthcare
-        services at your doorstep. Your health and comfort are our priority.
-    </p>
-</section>
-<section id="booking" style="padding:50px 20px; background:#f5f5f5;">
-<h2 style="text-align:center;">Book Nursing Service</h2>
-
-<form style="max-width:500px; margin:auto;">
-
-<input type="text" placeholder="Full Name" required
-style="width:100%; padding:12px; margin:10px 0;">
-
-<input type="tel" placeholder="Phone Number" required
-style="width:100%; padding:12px; margin:10px 0;">
-
-<input type="text" placeholder="Address" required
-style="width:100%; padding:12px; margin:10px 0;">
-
-<select style="width:100%; padding:12px; margin:10px 0;">
-<option>Injection Service</option>
-<option>IV Drip</option>
-<option>Wound Dressing</option>
-<option>Blood Pressure Check</option>
-<option>Patient Care</option>
-</select>
-
-<input type="date"
-style="width:100%; padding:12px; margin:10px 0;">
-
-<button type="submit"
-style="width:100%; padding:15px; background:#007BFF; color:white; border:none; border-radius:8px;">
-Book Now
-</button>
-
-</form>
-</section>
-<footer id="contact" style="background:#0d6efd; color:white; text-align:center; padding:20px;">
-<h3>H.R Nursing Services</h3>
-
-<p>📞 03162738844</p>
-
-<p>📍 North Karachi, Karachi</p>
-
-<p>Available 24/7</p>
-
-<p>© 2026 H.R Nursing Services. All Rights Reserved.</p>
-</footer>
-<a href="https://wa.me/923162738844"
-target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;text-decoration:none;font-size:18px;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:9999;">
-💬
-</a>
 </body>
 </html>
-
