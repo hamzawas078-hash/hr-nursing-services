@@ -163,3 +163,19 @@ nav a{
 }
 
     }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+header{
+    padding:15px 8%;
+}
