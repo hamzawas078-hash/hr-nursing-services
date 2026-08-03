@@ -216,3 +216,24 @@ header{
 .card p{
     line-height:1.6;
 }
+.booking-form{
+    max-width:500px;
+    margin:30px auto;
+}
+
+.booking-form input,
+.booking-form select{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking-form button{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    margin-top:10px;
+}
