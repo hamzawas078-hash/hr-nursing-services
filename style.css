@@ -253,3 +253,9 @@ header{
   text-decoration: none;
   z-index: 999;
 }
+.floating-call {
+  position: fixed !important;
+  bottom: 130px !important;
+  right: 25px !important;
+  z-index: 10000 !important;
+}
