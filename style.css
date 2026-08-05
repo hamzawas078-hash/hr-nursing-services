@@ -255,3 +255,11 @@ header{
   transform: scale(1.05);
   opacity: 0.9;
 }
+@media(max-width:768px){
+
+.floating-call{
+  right:25px;
+  bottom:130px;
+}
+
+    }
