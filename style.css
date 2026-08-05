@@ -29,10 +29,18 @@ header{
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
-    margin-left:20px;
-    font-weight:500;
+    margin-left:18px;
+    font-weight:600;
+    padding:10px 16px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,.18);
+    transform:translateY(-2px);
 }
 
 /* Home Hero */
