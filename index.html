@@ -111,11 +111,25 @@ Our trained staff is available for your nursing needs.
 <input type="text" name="name" placeholder="Full Name" required>
 <input type="email" name="email" placeholder="Email Address" required>
 <input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="number" name="age" placeholder="Age" required>
 
+<label for="gender">Gender</label>
+<select id="gender" name="gender" required>
+<option value="">Select Gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
 <input type="text" name="address" placeholder="Address" required>
+<label for="visit-date">Preferred Visit Date</label>
+<input type="date" id="visit-date" name="visit_date" required>
+
+<label for="visit-time">Preferred Visit Time</label>
+<input type="time" id="visit-time" name="visit_time" required>
 <label for="service">Select Service</label>
+<label for="message">Patient Problem / Notes</label>
+<textarea id="message" name="message" placeholder="Describe patient's condition or nursing requirement..." rows="4" required></textarea>
 <select id="service" name="service" required>
-<option>Select Service</option>
+<option value="">Select Service</option>
 <option>Injection Service</option>
 <option>IV Drip</option>
 <option>Wound Dressing</option>
