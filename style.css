@@ -239,7 +239,7 @@ header{
 }
 .floating-call {
   position: fixed;
-  bottom: 90px;
+  bottom: 130px;
   right: 25px;
   background: green;
   color: white;
