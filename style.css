@@ -251,9 +251,4 @@ header{
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   z-index: 10000;
 }
-.floating-call {
-  position: fixed !important;
-  bottom: 130px !important;
-  right: 25px !important;
-  z-index: 10000 !important;
-}
+
