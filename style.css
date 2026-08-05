@@ -153,26 +153,7 @@ footer{
 
 /* Mobile */
 
-@media(max-width:768px){
 
-header{
-    flex-direction:column;
-}
-
-nav{
-    margin-top:15px;
-}
-
-nav a{
-    margin:8px;
-    display:inline-block;
-}
-
-.hero h1{
-    font-size:32px;
-}
-
-    }
 .logo{
     display:flex;
     align-items:center;
