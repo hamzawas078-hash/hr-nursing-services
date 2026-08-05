@@ -223,7 +223,8 @@ header{
 }
 
 .booking-form input,
-.booking-form select{
+.booking-form select,
+.booking-form textarea{
     width:100%;
     padding:14px;
     margin:10px 0;
