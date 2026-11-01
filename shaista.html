@@ -1,54 +1,171 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Shaista | Homeopathic Doctor</title>
-<meta name="description" content="Dr. Shaista - Homeopathic Treatment and Home Physiotherapy Services in Karachi.">
+<meta name="description" content="Dr. Shaista Homeopathic Treatment and Home Physiotherapy Home Visit Services.">
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<header>
-  <h2>Dr. Shaista</h2>
-  <p>Homeopathic Doctor</p>
+<style>
+.shaista-page {
+  font-family: Arial, sans-serif;
+  color: #183b36;
+  background: #f2faf7;
+  padding-bottom: 40px;
+}
+.shaista-hero {
+  background: linear-gradient(135deg,#087f70,#064d49);
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
+.shaista-hero h1 {font-size: 32px;margin: 0 0 12px;}
+.shaista-hero p {margin: 8px;}
+.shaista-section {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 850px;
+  box-shadow: 0 4px 15px #00000010;
+}
+.shaista-section h2 {color:#087f70;}
+.shaista-section li {margin:12px 0;}
+.shaista-btn {
+  display:inline-block;
+  background:#087f70;
+  color:white;
+  padding:13px 22px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.shaista-whatsapp {background:#168b50;}
+.shaista-form input,
+.shaista-form select,
+.shaista-form textarea {
+  width:100%;
+  box-sizing:border-box;
+  padding:13px;
+  margin:8px 0 15px;
+  border:1px solid #ccdcd6;
+  border-radius:8px;
+  font-size:16px;
+}
+.shaista-form button {
+  width:100%;
+  border:0;
+  cursor:pointer;
+  font-size:17px;
+}
+.shaista-note {color:#586c65;font-size:14px;}
+</style>
+</head>
+
+<body>
+<div class="shaista-page">
+
+<header class="shaista-hero">
+<h1>Dr. Shaista</h1>
+<p>Homeopathic Doctor (DHMS)</p>
+<p>Certified Assistant of Physiotherapy</p>
+<p>2 Years Experience</p>
 </header>
 
-<main>
-<section>
-  <h1>Dr. Shaista</h1>
-  <h3>Homeopathic Doctor (DHMS)</h3>
-  <p>Certified Assistant of Physiotherapy</p>
-  <p>2 Years Experience</p>
+<section class="shaista-section">
+<h2>Homeopathic Treatment</h2>
+<p>Natural, Safe & Effective Healing</p>
 </section>
 
-<section>
-  <h2>Homeopathic Treatment</h2>
-  <p>Natural, Safe & Effective Healing</p>
+<section class="shaista-section">
+<h2>Physiotherapy Services</h2>
+<ul>
+<li>Joint & Muscle Pain</li>
+<li>Back & Neck Pain</li>
+<li>Sprain & Mobility Problems</li>
+<li>Pain Relief & Rehabilitation</li>
+<li>Home Physiotherapy Visit</li>
+</ul>
 </section>
 
-<section>
-  <h2>Physiotherapy Services</h2>
-  <ul>
-    <li>Joint & Muscle Pain</li>
-    <li>Back & Neck Pain</li>
-    <li>Sprain & Mobility Problems</li>
-    <li>Pain Relief & Rehabilitation</li>
-    <li>Home Physiotherapy Visit</li>
-  </ul>
+<section class="shaista-section">
+<h2>Home Visit Appointment</h2>
+<p>Book your appointment for a home visit.</p>
+
+<form class="shaista-form" onsubmit="sendShaistaBooking(event)">
+
+<label>Patient Name</label>
+<input type="text" id="patientName" required>
+
+<label>Mobile Number</label>
+<input type="tel" id="patientPhone" required>
+
+<label>Home Address</label>
+<textarea id="patientAddress" rows="3" required></textarea>
+
+<label>Select Service</label>
+<select id="patientService" required>
+<option value="">Select Service</option>
+<option>Homeopathic Consultation</option>
+<option>Home Physiotherapy Visit</option>
+<option>Joint & Muscle Pain</option>
+<option>Back & Neck Pain</option>
+<option>Other</option>
+</select>
+
+<label>Additional Details</label>
+<textarea id="patientDetails" rows="3"></textarea>
+
+<button type="submit" class="shaista-btn shaista-whatsapp">
+Send Booking on WhatsApp
+</button>
+</form>
+
+<p class="shaista-note">
+Your booking details will open directly in Dr. Shaista's WhatsApp.
+</p>
 </section>
 
-<section>
-  <h2>Home Visit Appointment</h2>
-  <p>Book your home visit with Dr. Shaista.</p>
+<section class="shaista-section" style="text-align:center">
+<h2>Contact Dr. Shaista</h2>
+<p>WhatsApp: 0311-2814593</p>
+<a class="shaista-btn shaista-whatsapp"
+href="https://wa.me/923112814593"
+target="_blank">
+WhatsApp Dr. Shaista
+</a>
 </section>
 
-<section>
-  <h2>Contact Dr. Shaista</h2>
-  <p>0347-2902433</p>
-  <p>0311-2814593</p>
-</section>
-</main>
+</div>
+
+<script>
+function sendShaistaBooking(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("patientName").value;
+  const phone = document.getElementById("patientPhone").value;
+  const address = document.getElementById("patientAddress").value;
+  const service = document.getElementById("patientService").value;
+  const details = document.getElementById("patientDetails").value;
+
+  const message =
+    "New Home Visit Booking - Dr. Shaista\n\n" +
+    "Patient Name: " + name + "\n" +
+    "Mobile: " + phone + "\n" +
+    "Address: " + address + "\n" +
+    "Service: " + service + "\n" +
+    "Details: " + details;
+
+  const whatsappURL =
+    "https://wa.me/923112814593?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
 
 </body>
-</html>
+  </html>
+
