@@ -3,168 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Shaista | Homeopathic Doctor</title>
-<meta name="description" content="Dr. Shaista Homeopathic Treatment and Home Physiotherapy Home Visit Services.">
-<link rel="stylesheet" href="style.css">
-
+<title>Dr. Shaista | Homeopathic & Physiotherapy</title>
+<meta name="description" content="Dr. Shaista - Homeopathic Treatment and Home Physiotherapy Visits. Book your home visit on WhatsApp.">
 <style>
-.shaista-page {
-  font-family: Arial, sans-serif;
-  color: #183b36;
-  background: #f2faf7;
-  padding-bottom: 40px;
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#edf7f4;
+ color:#24443e;
 }
-.shaista-hero {
-  background: linear-gradient(135deg,#087f70,#064d49);
-  color: white;
-  text-align: center;
-  padding: 55px 20px;
+.topbar{
+ background:linear-gradient(135deg,#075d52,#079b83);
+ color:white;text-align:center;padding:35px 15px;
 }
-.shaista-hero h1 {font-size: 32px;margin: 0 0 12px;}
-.shaista-hero p {margin: 8px;}
-.shaista-section {
-  background: white;
-  margin: 20px auto;
-  padding: 25px;
-  border-radius: 15px;
-  max-width: 850px;
-  box-shadow: 0 4px 15px #00000010;
+.topbar h1{font-size:34px;margin:8px}
+.topbar p{margin:8px;font-size:17px}
+.tag{
+ display:inline-block;background:#ffffff20;
+ padding:9px 16px;border-radius:25px;
+ margin:5px;font-size:14px;
 }
-.shaista-section h2 {color:#087f70;}
-.shaista-section li {margin:12px 0;}
-.shaista-btn {
-  display:inline-block;
-  background:#087f70;
-  color:white;
-  padding:13px 22px;
-  border-radius:9px;
-  text-decoration:none;
-  font-weight:bold;
+.container{max-width:900px;margin:auto;padding:15px}
+.card{
+ background:white;padding:25px;margin:20px 0;
+ border-radius:18px;
+ box-shadow:0 5px 20px #124b4012;
 }
-.shaista-whatsapp {background:#168b50;}
-.shaista-form input,
-.shaista-form select,
-.shaista-form textarea {
-  width:100%;
-  box-sizing:border-box;
-  padding:13px;
-  margin:8px 0 15px;
-  border:1px solid #ccdcd6;
-  border-radius:8px;
-  font-size:16px;
+.card h2{color:#07816f;margin-top:0;font-size:24px}
+.service{
+ background:#f0f9f6;padding:14px;
+ border-radius:10px;margin:10px 0;
+ border-left:4px solid #079b83;
 }
-.shaista-form button {
-  width:100%;
-  border:0;
-  cursor:pointer;
-  font-size:17px;
+.form input,.form textarea,.form select{
+ width:100%;padding:14px;margin:9px 0 16px;
+ border:1px solid #c9ddd6;border-radius:9px;
+ font-size:16px;background:white;
 }
-.shaista-note {color:#586c65;font-size:14px;}
+.form label{font-weight:bold}
+.btn{
+ display:block;text-align:center;
+ background:#168b50;color:white;
+ text-decoration:none;padding:15px;
+ border:0;border-radius:10px;
+ font-size:17px;font-weight:bold;width:100%;
+ cursor:pointer;
+}
+.btn:hover{background:#08733d}
+.contact{text-align:center}
+.number{font-size:21px;font-weight:bold;color:#087b67}
+.footer{
+ background:#075d52;color:white;
+ text-align:center;padding:22px;
+ margin-top:25px;
+}
+@media(max-width:600px){
+ .topbar h1{font-size:29px}
+ .card{padding:20px}
+}
 </style>
 </head>
-
 <body>
-<div class="shaista-page">
 
-<header class="shaista-hero">
+<header class="topbar">
 <h1>Dr. Shaista</h1>
 <p>Homeopathic Doctor (DHMS)</p>
-<p>Certified Assistant of Physiotherapy</p>
-<p>2 Years Experience</p>
+<div class="tag">Certified Assistant of Physiotherapy</div>
+<div class="tag">2 Years Experience</div>
+<p>Professional Home Visit Services</p>
 </header>
 
-<section class="shaista-section">
-<h2>Homeopathic Treatment</h2>
+<main class="container">
+
+<section class="card">
+<h2>🏠 Homeopathic Treatment</h2>
 <p>Natural, Safe & Effective Healing</p>
 </section>
 
-<section class="shaista-section">
-<h2>Physiotherapy Services</h2>
-<ul>
-<li>Joint & Muscle Pain</li>
-<li>Back & Neck Pain</li>
-<li>Sprain & Mobility Problems</li>
-<li>Pain Relief & Rehabilitation</li>
-<li>Home Physiotherapy Visit</li>
-</ul>
+<section class="card">
+<h2>💚 Physiotherapy Services</h2>
+<div class="service">✓ Joint & Muscle Pain</div>
+<div class="service">✓ Back & Neck Pain</div>
+<div class="service">✓ Sprain & Mobility Problems</div>
+<div class="service">✓ Pain Relief & Rehabilitation</div>
+<div class="service">✓ Home Physiotherapy Visit</div>
 </section>
 
-<section class="shaista-section">
-<h2>Home Visit Appointment</h2>
-<p>Book your appointment for a home visit.</p>
+<section class="card">
+<h2>📅 Home Visit Appointment</h2>
+<p>Book your appointment for a home visit with Dr. Shaista.</p>
 
-<form class="shaista-form" onsubmit="sendShaistaBooking(event)">
+<form class="form" onsubmit="sendBooking(event)">
 
 <label>Patient Name</label>
-<input type="text" id="patientName" required>
+<input id="pname" type="text" placeholder="Enter your name" required>
 
 <label>Mobile Number</label>
-<input type="tel" id="patientPhone" required>
+<input id="pphone" type="tel" placeholder="Enter mobile number" required>
 
 <label>Home Address</label>
-<textarea id="patientAddress" rows="3" required></textarea>
+<textarea id="paddress" rows="3" placeholder="Enter complete address" required></textarea>
 
 <label>Select Service</label>
-<select id="patientService" required>
+<select id="pservice" required>
 <option value="">Select Service</option>
 <option>Homeopathic Consultation</option>
 <option>Home Physiotherapy Visit</option>
 <option>Joint & Muscle Pain</option>
 <option>Back & Neck Pain</option>
-<option>Other</option>
+<option>Other Service</option>
 </select>
 
 <label>Additional Details</label>
-<textarea id="patientDetails" rows="3"></textarea>
+<textarea id="pdetails" rows="3" placeholder="Additional information (optional)"></textarea>
 
-<button type="submit" class="shaista-btn shaista-whatsapp">
-Send Booking on WhatsApp
+<button class="btn" type="submit">
+💬 Book Home Visit on WhatsApp
 </button>
-</form>
 
-<p class="shaista-note">
-Your booking details will open directly in Dr. Shaista's WhatsApp.
-</p>
+</form>
 </section>
 
-<section class="shaista-section" style="text-align:center">
+<section class="card contact">
 <h2>Contact Dr. Shaista</h2>
-<p>WhatsApp: 0311-2814593</p>
-<a class="shaista-btn shaista-whatsapp"
-href="https://wa.me/923112814593"
-target="_blank">
-WhatsApp Dr. Shaista
+<p>WhatsApp Number</p>
+<p class="number">0311-2814593</p>
+<a class="btn" href="https://wa.me/923112814593" target="_blank">
+💬 WhatsApp Dr. Shaista
 </a>
 </section>
 
-</div>
+</main>
+
+<footer class="footer">
+<p>Dr. Shaista | Homeopathic & Physiotherapy Services</p>
+<p>Your Health, My Responsibility</p>
+</footer>
 
 <script>
-function sendShaistaBooking(event) {
-  event.preventDefault();
+function sendBooking(event){
+ event.preventDefault();
 
-  const name = document.getElementById("patientName").value;
-  const phone = document.getElementById("patientPhone").value;
-  const address = document.getElementById("patientAddress").value;
-  const service = document.getElementById("patientService").value;
-  const details = document.getElementById("patientDetails").value;
+ const message =
+ "New Home Visit Booking - Dr. Shaista\n\n"+
+ "Patient Name: "+document.getElementById("pname").value+"\n"+
+ "Mobile: "+document.getElementById("pphone").value+"\n"+
+ "Address: "+document.getElementById("paddress").value+"\n"+
+ "Service: "+document.getElementById("pservice").value+"\n"+
+ "Details: "+document.getElementById("pdetails").value;
 
-  const message =
-    "New Home Visit Booking - Dr. Shaista\n\n" +
-    "Patient Name: " + name + "\n" +
-    "Mobile: " + phone + "\n" +
-    "Address: " + address + "\n" +
-    "Service: " + service + "\n" +
-    "Details: " + details;
+ const url="https://wa.me/923112814593?text="+
+ encodeURIComponent(message);
 
-  const whatsappURL =
-    "https://wa.me/923112814593?text=" +
-    encodeURIComponent(message);
-
-  window.open(whatsappURL, "_blank");
+ window.open(url,"_blank");
 }
 </script>
 
 </body>
-  </html>
-
+</html>
